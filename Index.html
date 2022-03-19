@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/home/gaby/Escritorio/Proyecto/imagenes/1054922.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       
+
+    <title>Un mundo lleno de sabores</title>
+    
+   
+   <style>
+       
+
+        body {
+            background-color: #BCAAA4;
+        }
+
+        #galletas {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #E1F5FE;
+            font-size: 30px;
+        }     
+
+        #letras-amarillas {
+            font-family: fantasy;
+            color: #FFEE58;
+         }      
+
+        #imagenes {
+            float: right
+        }
+
+        #primer-parafo {
+            text-align: justify;
+            text-indent: 8px;
+            margin: 10px;
+        }
+
+        .ConBorde {
+            border: 1px solid;
+        }
+
+        .SinBorde {
+            border: 0px none;
+        }
+
+        .Mantequilla{
+            width:300px;
+            background-color: #4DD0E1;
+          }
+        .Harina{
+            width:300px;
+            background-color: #80DEEA;
+        }   
+                   
+        .Azucar{
+            width:300px;
+            background-color: #B2EBF2;
+        }
+        .Liquidos{
+            width:300px;
+            background-color: #E0F7FA;
+        }
+
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        #letras-sombreadas{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 3em;
+            text-shadow: #00897B 6px 0;
+            Color:#EEEEEE;
+        }
+
+       #Resetas h4{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #E0F7FA;
+
+       }
+ 
+        #Resetas .los-ingredientes{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #B2DFDB;
+       }
+
+        #Resetas .los-ingredientes-zanahoria{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #FFAD60;
+            
+        }
+
+
+       #Resetas .los-pasos{
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #E0F7FA;
+
+       }
+
+       #torta-de-zanahoria{
+           font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:#EE6F57;
+       }
+     
+        .sombreado-2{
+            font-size: 1em;
+            text-shadow:#FFAD60 5px 0;
+            Color:#F7F7F7;
+
+       }
+
+       #galletas .sombreado-2{
+            font-size: 1em;
+            text-shadow: #86C6F4 5px 0;
+            Color: #F7F7F7;
+       }         
+       
+      
+       
+       
+        
+    </style>
+</head>
+<body>
+    
+    
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12"> 
+      <nav class="navbar navbar-light" style="background-color:#AEEFF0" ;>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"   data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mi pagina web</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul>
+                <li> <a href="#primer-parafo"> Inicio </a> </li>
+                <li> <a href="#Resetas"> Resetas </a>
+              <ul>
+                <li> <a href="#galletas"> Galletas </a> </li>
+                <li> <a href="#torta-de-zanahoria">Torta de anahoria</a> </li>
+              </ul>
+                <li> <a href="#tablas"> Tablas </a> </li>
+                <li> <a href="#pie-de-pagina"> Contacto </a></li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+    <div class="col-2">     
+      <div class="imagen-encabezado">
+          <img src="/home/gaby/Escritorio/Proyecto/imagenes/lado izquierdo.png" alt="decoracion">
+      </div>
+    </div>
+
+   <div class="col-7" style= " margin-top: 6vw; color: #E1F5FE;">  
+        <h1 class="display-4 text-center"> Un mundo lleno de sabores</h1> 
+    
+    </div>
+    
+    <div class="col-2">
+        <div class="imagen-encabezado2">
+              <img src="/home/gaby/Escritorio/Proyecto/imagenes/lado derecho.png" alt="decoracion">
+         </div>
+    </div>
+      
+
+    </div>        
+
+
+  <div class="row">
+        <div class="col-9">
+            <div class="seccion">
+                <article>
+                    <p id="primer-parafo">
+                        Es delicioso comer un postre después de un gran almuerzo o en una tarde de persa, esa parte dulce del
+                        dia; como una torta de chocolate, un cheesekace,
+                        un volcán de chocolate, una dona, <br> una galleta o simplemente un heladito es una sensación mágica y
+                        emocionante más si lo
+                        compartes en familia. Esa explosión de sabores cuando uno prueba un postre nuevo o como uno bien <br>
+                        calentito es única y
+                        especial. En este sito web hablaré de varios postres y de algunas recetas para que uno pueda recrear ese
+                        postre que
+                        tanto le gusta. No soy experta, pero poco a poco se aprende..
+                    </p>
+                </article>
+            </div>
+        </div>
+    
+      
+    <div class="col-3">
+         <div id="carouselExampleControls" class="carousel slide"   data-bs-ride="carousel">
+           <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_ThKtIMhmu_m3lMgQ-3NdbrXb5kwM1bBYg&usqp=CAU"
+                        class="d-block w-99" alt="donas">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuJJohTfIxhbtC5SKghGzQoERMHpOjp9Vm5Q&usqp=CAU"
+                        class="d-block w-99" alt="postre">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0vyQsKLHmOTulczENEhdFs7jXVxflGLGExQ&usqp=CAU"
+                        class="d-block w-99" alt="cheesekace">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>        
+        </div>
+    </div>
+</div>    
+   
+  
+<div class="row">
+    <div class="col-12">
+         <div class="seccion2">
+            
+          <section id="Resetas">
+              <h1 id="letras-sombreadas">Resetas</h1>
+    
+              <h3 id="galletas"> Toda buena <span class="sombreado-2"> galletas</span> tiene su buena reseta </h3>
+    
+              <h1 id="letras-amarillas">Los ingredientes</h1>
+
+            <div class="los-ingredientes">
+              <ol>
+                  <li> Harina, 180 g
+                  <li> Mantequilla, 120 g (temperatura ambiente)
+                  <li> Azúcar morena, 30 g
+                  <li> Azuacar blanca, 30 g
+                  <li> Polvo para hornear, 1/4 cucharadita (opcional)
+                  <li> Esencia de vainilla, 1 cucharadita (opcional)
+                  <li> Chispas de cocolate (opcional)
+              </ol>
+            </div>
+
+              <h2 id="letras-amarillas"> Pasos para preparar galetas en casa
+              </h2>
+    
+       <p class="los-pasos"> <br>
+           1. Cremamos (batimos) un poco la mantequilla y agregamos el azúcar y batimos hasta que desaparezca la
+           mayoría de la
+                 azúcar. <br>
+                 <br>
+                 2. Juntamos la harina con el bicarbonato y la agregamos a nuestra mezcla, poco a poco para que todo quede
+                 bien
+                 integrado. <br>
+                 <br>
+                 3. Ya cuando todo este bien integrado le agregamos la esencia de vanilla y batimos un poco.<br>
+                 <img id="imagenes"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZz3yy2uCUYA3k8R-5qZfFJBnnM53Ht7gwIg&usqp=CAU"
+                     alt="galletas">
+                 <br>
+                 4. Todo bien integrado tapamos nuestra masa con un trapo o papel film, y la llevamos a la nevera media
+                 hora.<br>
+                 <br>
+     
+                 5. Pasada la media hora la sacamos y amasamos un poco y ponemos las chispas de chocolate. <br>
+                 <br>
+                 6. Le damos la forma que deseamos y las colocamos en una bandeja con papel mantequilla. Y las dejamos
+                 reposar mientras
+                 precalentamos el horno a 180°. <br>
+                 <br>
+                 7. Cocinamos nuestras galletas por 12 minutos.<br>
+                 <br>
+     
+             </p>
+             <h4>
+                 Tan solo 7 pasitos para preparar unas fáciles y deliciosas galletas
+             </h4>
+     
+            
+      <h1 id="torta-de-zanahoria"> Una delisiosa torta de <span class="sombreado-2">
+                    zanahoria</span> </h1>
+            <h1 id="letras-amarillas">Los ingredientes</h1>
+            <ol class="los-ingredientes-zanahoria">
+                <li> Huevos, 3
+                <li> Azucar, 2 tazas
+                <li> Harina, 2 tazas
+                <li> Polvo para hornear, 15 gr
+                <li> Aceite, 1 taza
+                <li> Vainilla, 1 cucharadita (opcional)
+                <li> Zanahoria ralladas, 4
+    
+            </ol>
+            <h2 id="letras-amarillas"> Pasos para preparar torta de zanahoria en casa
+            </h2>
+    
+            <p class="los-pasos"> <br>
+                1. Batir los huevos con el azucar.<br>
+                <br>
+                2. Agregamos la azucar y batimos bien hasta que quede bien integrado.<br>
+                <br>
+                3. Agregaos un taza de harina y el Polvo de hornear poco a poco mientras batimos.<br>
+                <br>
+                4. Cuando todo este bien integrado agragamos la segunda taza de harina y batimos muy bien.<br>
+                <br>
+                <img id="imagenes"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdL2isq7ToK93i_H1vpI-kgUS2cA_4K5nyyQ&usqp=CAU"
+                    alt="tarta-de-zanahoria">
+                5. Agregamos las taza de acete, la vainilla y batimos hasta que quede bien integrado.<br>
+                <br>
+                6. Integramos la zanahoria y vatimos muy bien hasta que quede todo bien integrado. <br>
+                <br>
+                7. Egrasamos nuestros moldes y depositamos la mescla<br>
+                <br>
+                8. Cocinamos a 200° hasta que le enteremos un palito y salga limpio<br>
+            </p>
+    
+            <h4>
+                Listo! una rica torta de zanahoria. La podemos decorar con una cobertura de chocolate blanco si queremos.
+            </h4>
+                </section>
+            
+            
+            </div>
+        </div>
+    </div>
+
+
+<div class="row">
+    <div class="clo-12">
+        <div class="seccion3">
+            <section id="tablas">
+                <h1 id="letras-sombreadas">Tablas</h1>
+                <p>
+                    En ocasiones tenemos nuestros ingredientes, pero no sabemos como pasarlo <em><strong> de gramos a tazas y de
+                            tazas a mililitros</em></strong>y viceversa. Por eso hoy te mostraré una tabla de convergencia
+                </p>
+        
+        
+                <div class="flex-container">
+        
+                    <div>
+                        <table class="Mantequilla">
+                            <tr>
+                                <th class="SinBorde"></th>
+                                <th class="ConBorde">Tazas</th>
+                                <th class="ConBorde">Gramos</th>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1 taza</td>
+                                <td class="ConBorde">220 gr</td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde">Mantequilla</td>
+                                <td class="ConBorde">1/2 taza </td>
+                                <td class="ConBorde">100 gr </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1/3 taza </td>
+                                <td class="ConBorde">65 gr </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1/4 taza </td>
+                                <td class="ConBorde">50 gr</td>
+                            </tr>
+        
+                        </table>
+                    </div>
+                    <div>
+                        <table class="Harina">
+        
+                            <tr>
+                                <th class="SinBorde"></th>
+                                <th class="ConBorde">Tazas</th>
+                                <th class="ConBorde">Gramos</th>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1 taza</td>
+                                <td class="ConBorde">125 gr</td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde">Harina </td>
+                                <td class="ConBorde">1/2 taza </td>
+                                <td class="ConBorde">60 gr </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1/3 taza </td>
+                                <td class="ConBorde">40 gr </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1/4 taza </td>
+                                <td class="ConBorde"> 30 gr</td>
+                            </tr>
+        
+        
+                        </table>
+                    </div>
+                    <div>
+                        <table class="Azucar">
+                            <tr>
+                                <th class="SinBorde"></th>
+                                <th class="ConBorde">Tazas</th>
+                                <th class="ConBorde">Gramos</th>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1 taza</td>
+                                <td class="ConBorde">200 gr</td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde">Azucar</td>
+                                <td class="ConBorde">1/2 taza </td>
+                                <td class="ConBorde">100 gr </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1/3 taza </td>
+                                <td class="ConBorde">65 gr </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1/4 taza </td>
+                                <td class="ConBorde">50 gr</td>
+                            </tr>
+        
+                        </table>
+                    </div>
+                    <div>
+                        <table class="Liquidos">
+                            <tr>
+                                <th class="SinBorde"></th>
+                                <th class="ConBorde">Tazas</th>
+                                <th class="ConBorde">Mililitros</th>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1 taza</td>
+                                <td class="ConBorde">250 ml</td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde">Liquidos</td>
+                                <td class="ConBorde">1/2 taza </td>
+                                <td class="ConBorde">125 ml </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1/3 taza </td>
+                                <td class="ConBorde">80 ml </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="SinBorde"></td>
+                                <td class="ConBorde">1/4 taza </td>
+                                <td class="ConBorde">60 ml</td>
+                            </tr>
+        
+        
+                        </table>
+                    </div>
+        
+                </div>
+             </div>
+          </div>
+    </section>
+    </div>
+    
+        
+<div class="row">
+    <div class="col-12 ">
+        <div>
+        <footer class="footer" style="background-color:#A5D6A7; top:435vh;">
+                <h1>
+                    Gabriela lozada <br>
+                    <img src="/home/gaby/Escritorio/Proyecto/imagenes/IMG_0612.JPG" alt="persona" width="99"> <br>
+                    Correo: Galogra1406@gmail.com <br>
+                    Instituto: Skolmi <br>
+        
+                </h1>
+        
+        
+            </footer>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+</div>
+</body>
+
+
+</html>
